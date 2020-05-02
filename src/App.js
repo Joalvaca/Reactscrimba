@@ -1,10 +1,14 @@
 import React from "react"
 import "./App.css"
+import Joke from "./components/Joke"
 
 function App() {
   return (
     <div>
-      <h1>dkjfdkfsj</h1>
+      <Joke question="k" joke="j" />
+      <Joke question="a" joke="b" />
+      <Joke question="c" joke="c" />
+      <Joke question="k" joke="j" />
     </div>
   )
 }
