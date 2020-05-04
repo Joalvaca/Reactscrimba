@@ -7,7 +7,7 @@ function App() {
     <div>
       <Joke question="kddd" joke="j" />
       <Joke question="atest" joke="b" />
-      <Joke question="c" joke="c" />
+      <Joke question="ctest" joke="c" />
       <Joke question="k" joke="j" />
     </div>
   )
