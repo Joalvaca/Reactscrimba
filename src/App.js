@@ -24,3 +24,7 @@ function App() {
   return <div>{products}</div>;
 }
 export default App;
+
+Data.map((item) => {
+  return <Products products={item} />;
+});
