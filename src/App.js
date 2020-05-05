@@ -1,17 +1,18 @@
-import React from "react"
-import "./App.css"
-import Joke from "./components/Joke"
+import React from "react";
+import "./App.css";
+import Product from "./components/Products";
+import Joke from "./components/Joke";
+import Data from "./components/Data";
 
 function App() {
   return (
     <div>
-      <Joke question="kddd" joke="j" />
-      <Joke question="atest" joke="b" />
-      <Joke question="ctest" joke="c" />
-      <Joke question="ktest" joke="j" />
-      <Joke question="test" joke="j" />
+      <Joke question="a" joke="b" />
+      <Joke question="a" joke="b" />
+      <Joke question="a" joke="b" />
+      <Joke question="a" joke="b" />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
