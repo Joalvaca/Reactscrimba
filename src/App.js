@@ -1,18 +1,26 @@
 import React from "react";
 import "./App.css";
-import Product from "./components/Products";
-import Joke from "./components/Joke";
-import Data from "./components/Data";
+// import Joke from "./components/Joke";
+// import jokesData from "./components/jokesData";
+import Data from "./components/Products/Data";
+import Products from "./components/Products/Products";
+
+// function App() {
+//   let jokeComponents = jokesData.map((joke) => {
+//     console.log(joke);
+//     return (
+//       <Joke question={joke.question} punchLine={joke.punchLine} key={joke.id} />
+//     );
+//   });
+
+//   return <div>{jokeComponents}</div>;
+// }
 
 function App() {
-  return (
-    <div>
-      <Joke question="a" joke="b" />
-      <Joke question="a" joke="b" />
-      <Joke question="a" joke="b" />
-      <Joke question="a" joke="b" />
-    </div>
-  );
-}
+  let products = Data.map((item) => {
+    return <Products key={item.id} products={item} />;
+  });
 
+  return <div>{products}</div>;
+}
 export default App;
