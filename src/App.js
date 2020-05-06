@@ -4,14 +4,23 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      loggedIn: true,
+      count: 0,
     };
   }
+
+  handleClick = () => {
+    this.setState((prevState) => {
+      return {
+        count: prevState.count + 1,
+      };
+    });
+  };
+
   render() {
-    let log = this.state.loggedIn;
     return (
       <div>
-        <h1>user is logged {log ? "in" : "out"}</h1>
+        <h1>{this.state.count}</h1>
+        <button onClick={this.handleClick}>Change!</button>
       </div>
     );
   }
