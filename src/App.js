@@ -3,13 +3,15 @@ import React, { Component } from "react";
 class App extends Component {
   constructor() {
     super();
-    this.state = { name: "joel", age: "20" };
+    this.state = {
+      loggedIn: true,
+    };
   }
   render() {
+    let log = this.state.loggedIn;
     return (
       <div>
-        <h1>{this.state.name}</h1>
-        <h3>{this.state.age} years old</h3>
+        <h1>user is logged {log ? "in" : "out"}</h1>
       </div>
     );
   }
