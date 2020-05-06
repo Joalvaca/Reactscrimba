@@ -1,32 +1,18 @@
-import React from "react";
+import React, { Component } from "react";
 
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <h1>Code</h1>
-      </div>
-    );
+class App extends Component {
+  constructor() {
+    super();
+    this.state = { name: "joel", age: "20" };
   }
-}
-export default App;
-
-class App extends React.Component {
   render() {
     return (
       <div>
-        <Header username="Joel" />
+        <h1>{this.state.name}</h1>
+        <h3>{this.state.age} years old</h3>
       </div>
     );
   }
 }
 
 export default App;
-
-class Header extends React.Component {
-  render() {
-    return <div>Hello, {this.props.username}</div>;
-  }
-}
-
-export default Header;
