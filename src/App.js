@@ -4,14 +4,14 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      count: 0,
+      log: true,
     };
   }
 
   handleClick = () => {
     this.setState((prevState) => {
       return {
-        count: prevState.count + 1,
+        log: !prevState.log,
       };
     });
   };
@@ -19,7 +19,8 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h1>{this.state.count}</h1>
+        <h1>The user is logged {this.state.log ? "in" : "out"} </h1>
+
         <button onClick={this.handleClick}>Change!</button>
       </div>
     );
