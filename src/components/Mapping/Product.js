@@ -1,17 +1,15 @@
 import React from "react";
 
-import React from "react";
-
 function Product(props) {
   return (
     <div>
-      <h2>{props.product.name}</h2>
+      <h2>{props.vschoolProducts.name}</h2>
       <p>
-        {props.product.price.toLocaleString("en-US", {
+        {props.vschoolProducts.price.toLocaleString("en-US", {
           style: "currency",
           currency: "USD",
-        })}{" "}
-        - {props.product.description}
+        })}
+        - {props.vschoolProducts.description}
       </p>
     </div>
   );
