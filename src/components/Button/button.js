@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ButtonRender from "./ButtonRender";
 
 class Button extends Component {
   state = {
@@ -20,8 +21,7 @@ class Button extends Component {
     return (
       <div>
         <h1>{count}</h1>
-        <button onClick={this.add}>add</button>
-        <button onClick={this.sub}>subtract</button>
+        <ButtonRender onAdd={this.add} onSub={this.sub} />
       </div>
     );
   }

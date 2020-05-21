@@ -14,7 +14,6 @@ class FormState extends Component {
       isKosher: false,
       isLactoseFree: false,
     };
-    this.handleChange = this.handleChange.bind(this);
   }
 
   handleChange = (e) => {
